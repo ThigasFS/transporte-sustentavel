@@ -28,6 +28,7 @@ export function cantoNoroeste(p: Problema) {
 
     let i = 0;
     let j = 0;
+    let ordem = 1;
 
     while (i < linhas && j < colunas) {
         const x = Math.min(oferta[i], demanda[j]);

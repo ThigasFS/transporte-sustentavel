@@ -10,8 +10,6 @@ export default function Variaveis() {
     const matriz = useAppSelector((state) => state.custos.matrizResultado);
     const custos = useAppSelector((state) => state.custos.custos);
 
-    console.log('custos: ', custos);
-
     if (!matriz || matriz.length === 0 || !custos || custos.length === 0) {
         return <Typography sx={{ color: "white" }}>Nenhum cálculo realizado</Typography>;
     }
@@ -68,7 +66,7 @@ export default function Variaveis() {
         <Box
             sx={{
                 display: "grid",
-                gridTemplateColumns: "1fr",
+                gridTemplateColumns: "1fr 1fr",
                 gap: 2
             }}
         >

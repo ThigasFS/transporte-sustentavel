@@ -28,11 +28,11 @@ export default function TabelaCustosEntrada() {
         borderRadius: 3,
         overflow: "hidden",
         p: 2,
-        height: "fit-content",
+        height: "90%",
         alignSelf: "start"
       }}
     >
-      <Table size="small">
+      <Table size="small" sx={{height: '100%'}}>
         <TableBody sx={{ "& tr:last-child td": { borderBottom: 0 } }}>
           {matriz.map((linha, i) => (
             <TableRow key={i}>

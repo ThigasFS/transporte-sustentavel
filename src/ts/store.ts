@@ -45,11 +45,11 @@ const transporteSlice = createSlice({
             state.movimentos = payload;
         },
         resetTudo: (state) => {
-            state.custos = [];
-            state.estoque = [];
-            state.demanda = [];
-            state.matrizResultado = null;
-            state.movimentos = [];
+            state.custos = initialState.custos;
+            state.estoque = initialState.estoque;
+            state.demanda = initialState.demanda;
+            state.matrizResultado = initialState.matrizResultado;
+            state.movimentos = initialState.movimentos;
         }
     }
 });

@@ -52,7 +52,7 @@ function App() {
       <Box
         sx={{
           display: "grid",
-          gridTemplateColumns: "300px 1fr",
+          gridTemplateColumns: ".40fr 1fr",
           alignItems: "start",
           gap: 3
         }}
